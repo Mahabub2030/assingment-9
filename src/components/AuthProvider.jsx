@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, updateProfile } from "firebase/auth";
 import auth from "../firebase/firebase.config";
+import { Navigate } from "react-router-dom";
 
 export const authContext = createContext();
 
@@ -30,6 +31,7 @@ const AuthProvider = ({children}) => {
 
     const handleLogout =()=>{
         signOut(auth)
+        Navigate('/login')
         
     }
 
