@@ -6,7 +6,6 @@ export const authContext = createContext();
 
 const AuthProvider = ({children}) => {
     const googleProvider = new GoogleAuthProvider()
-
     const [user,setUser]= useState(null)
     // console.log((user));
     // const [refatch, setrefatch] = useState(null)
@@ -31,6 +30,7 @@ const AuthProvider = ({children}) => {
 
     const handleLogout =()=>{
         signOut(auth)
+        
     }
 
     const authInfo ={
