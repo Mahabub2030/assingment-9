@@ -4,8 +4,8 @@ import tutorial from "../assets/tutorial.png"
 
 const Tutorials = () => {
   return (
-    <div className="w-10/12 mx-auto">
-      <div className="flex flex-col items-center mt-5">
+    <div className="w-10/12 mx-auto pt-20">
+      <div className="flex flex-col items-center  ">
           <img className="size-10" src={tutorial} alt="" />
           <h2 className="font-bold text-3xl text-blue-500 mb-5 text-center">Tutorials</h2>
           </div>

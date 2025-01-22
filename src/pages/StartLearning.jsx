@@ -6,8 +6,8 @@ import tutorial from "../assets/tutorial.png"
 
 const StartLearning = () => {
   return (
-    <div className="w-10/12 mx-auto">
-      <div className="flex flex-col items-center mt-5">
+    <div className="w-10/12 mx-auto pt-20">
+      <div className="flex flex-col items-center">
       <img className="size-10" src={start} alt="" />
       <h2 className="text-3xl font-bold mb-4 text-blue-600  text-center ">Start Learning</h2>
       </div>
